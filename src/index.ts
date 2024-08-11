@@ -1,5 +1,4 @@
 import {someFunction} from "./someFunction";
 
 
-someFunction(25)
-
+someFunction(2225)
