@@ -7,7 +7,7 @@ export default (env: BuildEnv): Configuration => {
 
     const paths: BuildPaths = {
         html: path.resolve(__dirname, 'public', 'index.html'),
-        entry: path.resolve(__dirname, 'src', 'index.ts'),
+        entry: path.resolve(__dirname, 'src', 'index.tsx'),
         build: path.resolve(__dirname, 'dist')
     }
     const mode = env.mode || 'development'
