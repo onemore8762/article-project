@@ -4,12 +4,12 @@ import {MainPageAsync} from "./pages/MainPage/MainPageAsync";
 import {AboutPageAsync} from "./pages/AboutPage/AboutPageAsync";
 import './styles/index.scss'
 import {useTheme} from "./theme/useTheme";
+import {cn} from "./helpers/classNames/classNames";
 
-const App = () => {
-
+export const App = () => {
     const {theme, toggleTheme} = useTheme()
     return (
-        <div className={`app ${theme}`}>
+        <div className={cn('app', {}, [theme])}>
             <button onClick={toggleTheme}>TOGGLE</button>
             <Link to={'/'} >Main</Link>
             <Link to={'/about'} >About</Link>
@@ -22,5 +22,3 @@ const App = () => {
         </div>
     );
 };
-
-export default App;
